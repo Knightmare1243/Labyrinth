@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dru18vj03dayj"]
+
+[ext_resource type="Texture2D" uid="uid://3tmmsou3ntml" path="res://Testing/Resources/Walls/Red Wall.png" id="1_go3i7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uhjav"]
+size = Vector2(64, 263)
+
+[node name="Node2D" type="StaticBody2D"]
+
+[node name="RedWall" type="Sprite2D" parent="."]
+position = Vector2(647, 320)
+scale = Vector2(0.320867, 0.139895)
+texture = ExtResource("1_go3i7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(637, 308.5)
+shape = SubResource("RectangleShape2D_uhjav")

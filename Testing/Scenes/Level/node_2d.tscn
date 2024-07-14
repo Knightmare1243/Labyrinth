@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctekwcft6yisg"]
+
+[ext_resource type="PackedScene" uid="uid://bwkmy1dgr0hvm" path="res://Testing/Scenes/player.tscn" id="2_66yu3"]
+[ext_resource type="PackedScene" uid="uid://cxlci4ho31k1e" path="res://Testing/Scenes/Structure.tscn" id="2_ur5rn"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("2_66yu3")]
+z_index = 10
+position = Vector2(-340, -25)
+
+[node name="Node2D2" parent="." instance=ExtResource("2_ur5rn")]
+position = Vector2(24, 13)
